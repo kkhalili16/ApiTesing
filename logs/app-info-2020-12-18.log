@@ -1,0 +1,3 @@
+[INFO ] 2020-12-18 22:48:41.948 [TestNG-tests-1] OrangeHRM - Navigated to http://www.tinyupload.com/
+[INFO ] 2020-12-18 22:48:46.154 [TestNG-tests-1] OrangeHRM - Clicked the choose file button
+[INFO ] 2020-12-18 22:48:46.661 [TestNG-tests-1] OrangeHRM - Entered the file path using AutoIT windows desktop automayion

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Main Test Suite" parallel = "tests" thread-count = "1">
+<listeners>
+    <listener class-name="listeners.TestNGListeners"></listener>
+</listeners>
+    <parameter name="OS" value="Windows"/>
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="gridurl" value="http://localhost:4444/wd/hub"/>
+    <!--<parameter name="baseurl" value="https://opensource-demo.orangehrmlive.com/"/>-->
+    <parameter name="baseurl" value="http://demo.guru99.com/test/newtours/"/>
+
+    <test name="Extent Report Test">
+        <classes>
+            <class name="test.NewTours"/>
+            <!--<class name="test.OrangeHRM"/>
+            <class name="test.OrangeHRMRun"/>
+            <class name="test.GoogleSearch"/>-->
+        </classes>
+    </test>
+</suite>

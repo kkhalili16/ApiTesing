@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Main Test Suite" parallel = "tests" thread-count = "1">
+<listeners>
+    <listener class-name="listeners.TestNGListeners"></listener>
+</listeners>
+    <parameter name="OS" value="Windows"/>
+    <parameter name="browser" value="Chrome"/>
+   <!-- <parameter name="baseurl" value="https://taa-dev.ets.org/internal/index.html"/>-->
+   <!-- <parameter name="gridurl" value="http://localhost:4444/wd/hub"/>-->
+  <parameter name="baseurl" value="http://www.tinyupload.com/"/>
+    <test name="Extent Report Test">
+        <classes>
+
+            <class name="test.rahulshettyacademyWebsiteTest.SoftAssertions_ConnectionRespondCodeTest"/>
+            <!--
+                     <class name="test.rahulshettyacademyWebsiteTest.HomeTest"/>
+                      <class name="test.rahulshettyacademyWebsiteTest.AlertsTest"/>
+                      <class name="test.rahulshettyacademyWebsiteTest.ClearTripTest"/>
+                      <class name="test.rahulshettyacademyWebsiteTest.GreenMarketTest"/>
+                       <class name="test.rahulshettyacademyWebsiteTest.ActionsTest"/>
+                       <class name="test.rahulshettyacademyWebsiteTest.ChildWindowsTest"/>
+                       <class name="test.rahulshettyacademyWebsiteTest.FrameTest"/>
+                       <class name="test.rahulshettyacademyWebsiteTest.LimitingWebDriverTest"/>
+                       <class name="test.rahulshettyacademyWebsiteTest.CalenderTest"/>
+                        <class name="test.rahulshettyacademyWebsiteTest.ScrollingWindowAndTableTest"/>
+                     <class name="test.VerifyHomePage"/>
+             -->
+        </classes>
+    </test>
+</suite>
